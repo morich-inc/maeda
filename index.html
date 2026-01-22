@@ -9,222 +9,280 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Noto Sans JP', sans-serif; word-break: break-word; color: #333; }
+        body { font-family: 'Noto Sans JP', sans-serif; word-break: break-word; color: #333; line-height: 1.7; }
         .morich-red { color: #E60012; }
         .bg-morich-red { background-color: #E60012; }
         .border-morich-red { border-color: #E60012; }
-        .corporate-overview { background-color: #f8fafc; border-radius: 8px; padding: 1.5rem; }
-        .morich-highlight { border: 2px solid #E60012; background-color: #fff5f5; border-radius: 8px; padding: 1.5rem; }
-        .badge { background-color: #E60012; color: white; padding: 2px 10px; border-radius: 4px; font-size: 0.875rem; font-weight: bold; margin-right: 5px; display: inline-block; }
+        .corporate-overview { background-color: #f0f7ff; border-radius: 8px; padding: 1.5rem; }
+        .morich-highlight { border: 3px solid #E60012; background-color: #fffafa; border-radius: 12px; padding: 2rem; position: relative; }
+        .morich-highlight::before { content: 'morich Recommend'; position: absolute; top: -15px; left: 20px; background: #E60012; color: white; padding: 2px 15px; font-weight: bold; border-radius: 20px; font-size: 0.8rem; }
+        .badge { background-color: #E60012; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-right: 6px; display: inline-block; margin-bottom: 8px; }
+        .link-card { border: 1px solid #e2e8f0; transition: all 0.3s; }
+        .link-card:hover { border-color: #E60012; background-color: #fff5f5; transform: translateY(-2px); }
     </style>
 </head>
 <body class="bg-gray-50">
 
-    <header class="bg-white border-b sticky top-0 z-50">
+    <header class="bg-white border-b-2 border-gray-100 sticky top-0 z-50 shadow-sm">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <img src="morich_logo.jpg" alt="morich" class="h-10">
-            <div class="text-sm font-bold text-gray-600">Candidate Exclusive Page</div>
+            <img src="morich_logo.jpg" alt="morich" class="h-10 md:h-12">
+            <div class="text-right">
+                <div class="text-xs font-bold text-gray-400">Exclusive Page for</div>
+                <div class="text-sm font-black text-gray-800">前田 大輔 さま</div>
+            </div>
         </div>
     </header>
 
-    <main class="container mx-auto px-4 py-10 max-w-4xl">
-        <section class="mb-16 text-center">
-            <h1 class="text-2xl md:text-3xl font-bold mb-4">前田 大輔 さま</h1>
-            <p class="text-gray-600 leading-relaxed mb-6">
-                これまでの素晴らしいご経歴を拝見し、今後のさらなる飛躍に向けた<br class="hidden md:block">
-                <strong>「オープンポジション・幹部クラス」</strong>の厳選案件をご案内いたします。
+    <main class="container mx-auto px-4 py-12 max-w-5xl">
+        
+        <section class="mb-20 text-center">
+            <h1 class="text-3xl md:text-5xl font-black mb-6 leading-tight">
+                前田 大輔 さまへ<br>
+                <span class="morich-red">渾身のキャリアパス</span>のご提案
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+                前田様の卓越したご経歴とリーダーシップを最大限に活かせるよう、<br class="hidden md:block">
+                <strong>「オープンポジション・幹部クラス」</strong>として以下の企業を厳選いたしました。
             </p>
-            <div class="w-20 h-1 bg-morich-red mx-auto"></div>
+            <div class="w-24 h-1.5 bg-morich-red mx-auto"></div>
         </section>
 
-        <section class="mb-20 bg-white shadow-xl rounded-2xl p-6 md:p-10">
-            <div class="mb-4">
-                <span class="badge">COO候補</span>
-                <span class="badge">経営層</span>
-                <span class="badge">IPO準備中</span>
-            </div>
-            <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">株式会社アリススタイル</h2>
-            
-            <div class="corporate-overview mb-8">
-                <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-3">Corporate Overview</h3>
-                <table class="w-full text-sm">
-                    <tr class="border-b border-gray-200">
-                        <th class="py-2 text-left w-1/3">本社住所</th>
-                        <td class="py-2">東京都港区西新橋2-8-6 住友不動産日比谷ビル 4F</td>
-                    </tr>
-                    <tr class="border-b border-gray-200">
-                        <th class="py-2 text-left">設立</th>
-                        <td class="py-2">2016年10月（サービス開始 2018年）</td>
-                    </tr>
-                    <tr class="border-b border-gray-200">
-                        <th class="py-2 text-left">従業員数</th>
-                        <td class="py-2">23名（アルバイト含む）</td>
-                    </tr>
-                    <tr>
-                        <th class="py-2 text-left">上場区分</th>
-                        <td class="py-2">未上場（2028年5月期 IPO目標）</td>
-                    </tr>
-                </table>
-            </div>
+        <section class="mb-24 bg-white shadow-2xl rounded-3xl overflow-hidden border border-gray-100">
+            <div class="p-8 md:p-12">
+                <div class="mb-6">
+                    <span class="badge">COO候補</span>
+                    <span class="badge">社長候補</span>
+                    <span class="badge">IPO準備中</span>
+                    <span class="badge">Confidential</span>
+                </div>
+                <h2 class="text-3xl md:text-5xl font-black mb-8 leading-none">株式会社アリススタイル</h2>
+                
+                <div class="corporate-overview mb-10">
+                    <h3 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Corporate Overview</h3>
+                    <table class="w-full text-base border-collapse">
+                        <tr class="border-b border-blue-100">
+                            <th class="py-3 text-left w-1/3 text-gray-500 font-medium italic">本社住所</th>
+                            <td class="py-3 font-bold">東京都港区南青山2-5-7 バイオフィリアプレイス南青山4F</td>
+                        </tr>
+                        <tr class="border-b border-blue-100">
+                            <th class="py-3 text-left text-gray-500 font-medium italic">設立</th>
+                            <td class="py-3 font-bold">2016年10月</td>
+                        </tr>
+                        <tr class="border-b border-blue-100">
+                            <th class="py-3 text-left text-gray-500 font-medium italic">従業員数</th>
+                            <td class="py-3 font-bold">23名（アルバイト含む）</td>
+                        </tr>
+                        <tr>
+                            <th class="py-3 text-left text-gray-500 font-medium italic">上場区分</th>
+                            <td class="py-3 font-bold">未上場（2028年5月期のIPOを視野）</td>
+                        </tr>
+                    </table>
+                </div>
 
-            <div class="prose max-w-none mb-8">
-                <p class="mb-4">
-                    BtoC・CtoCの「モノ」の貸し借りを実現するシェアリングプラットフォーム「Alice.style」を運営。会員数は200万人を突破し、通期GMVは120億円規模へ急成長中。
-                </p>
-                <p class="mb-4">
-                    SBI、三井住友銀行、日本郵政、JR東日本といった強力なCVC陣からの出資を受け、日本航空や日本郵便等20社との業務提携を実現。独自の物流・保険ノウハウを武器に、シェアリングの“社会インフラ化”を加速させています。
-                </p>
-            </div>
+                <div class="space-y-6 text-gray-700 text-lg mb-10">
+                    <p>
+                        BtoCおよびCtoC間における「モノ」の貸し借りをワンストップで実現するシェアリングサービス「Alice.style（アリススタイル）」を運営する企業です。メーカーや個人が「貸し手」となり、最新家電や美容機器など幅広い商品をスマホひとつでレンタルできるプラットフォームで、<strong>会員数は200万人を超え、通期GMVは120億円規模（2024年8月時点）</strong>と、国内有数のモノのシェアリングサービスへと成長しています。
+                    </p>
+                    <p>
+                        市場の拡大と事業シナジーを背景に、SBI・三井住友銀行・日本郵政・JR東日本など複数のCVCから出資を受け、独自のビジネスモデルと物流ノウハウを確立。日本航空、日本郵便、Vポイントを運営するCCCMKホールディングスなど20社との業務提携を通じて事業を加速しています。さらに大手商社と連携し、インドネシアでの実証実験を進めるなど、アジア展開にも着手。シェアリングの“社会インフラ化”を目指しています。
+                    </p>
+                    <p>
+                        現在はアルバイト含め23名の体制、創業者がインターネットビジネスで30年の経験を持つ村本社長（現在70歳、起業は61歳）でありながら、経営層に楽天やメルカリ出身の若手幹部を迎え入れ成長を加速させています。
+                    </p>
+                </div>
 
-            <div class="morich-highlight mb-8">
-                <h3 class="font-bold text-morich-red mb-2 italic">★ morich Recommend</h3>
-                <p class="text-sm leading-relaxed">
-                    61歳で起業し、現在70歳にして誰よりも情熱的に挑戦を続ける村本社長。そのバイタリティに共鳴した楽天・メルカリ出身の若手幹部が集結しています。2028年のIPOに向けた体制構築の要として、圧倒的なパッションを持つ前田様を、ぜひ経営メンバーとしてお繋ぎしたい一社です。
-                </p>
-            </div>
+                <div class="bg-gray-50 p-8 rounded-2xl mb-10 border-l-8 border-gray-300">
+                    <h3 class="text-xl font-black mb-4 flex items-center italic">
+                        <span class="mr-3 text-3xl">👤</span>代表取締役社長 村本 理恵子 氏
+                    </h3>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        1979年東京大学卒業後、時事通信社で世論調査・市場調査分析に従事。専修大学経営学部教授を経て98年、ガーラの代表取締役会長に就任、2001年ナスダックジャパン上場に貢献。ウーマン・オブ・ザ・イヤー ネット部門を受賞。09年エイベックス通信放送に入社し、モバイル動画配信事業「BeeTV」の立ち上げに参画。14年、エイベックス・デジタル取締役としてデジタル事業を推進。17年、ピーステックラボ（現：アリススタイル）を開始。21年、ウーマン・オブ・ザ・イヤーを受賞。
+                    </p>
+                    <div class="bg-white p-4 rounded-lg border border-red-100 italic text-red-600 font-bold">
+                        「彼女がこの会社を起業したのは61歳のときでした。常に新しいことに挑戦し、ワクワクしていたいというパッションを持ち続けている方です。」
+                    </div>
+                </div>
 
-            <div class="bg-gray-50 p-6 rounded-lg mb-8">
-                <h3 class="font-bold mb-4 border-l-4 border-morich-red pl-3">代表プロフィール：村本 理恵子 氏</h3>
-                <p class="text-sm leading-relaxed mb-4">
-                    東京大学卒業後、時事通信社を経て専修大学教授。98年にガーラ代表としてナスダックジャパン上場を牽引。エイベックス・デジタル取締役を経て、2017年に現社（旧ピーステックラボ）を創業。ウーマン・オブ・ザ・イヤー2度受賞という稀代のシリアルアントレプレナーです。
-                </p>
-                <div class="flex flex-wrap gap-3">
-                    <a href="https://www.corporate.alice.style/message/" target="_blank" class="text-xs bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded">トップメッセージ</a>
-                    <a href="https://woman.nikkei.com/atcl/aria/column/19/012200044/062100030/" target="_blank" class="text-xs bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded">日経ARIA記事</a>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+                    <a href="https://www.corporate.alice.style/company/" target="_blank" class="link-card p-4 rounded-xl flex items-center justify-between group">
+                        <span class="font-bold text-gray-800">企業公式サイト</span>
+                        <span class="text-red-500 group-hover:translate-x-1 transition">➔</span>
+                    </a>
+                    <a href="https://www.corporate.alice.style/message/" target="_blank" class="link-card p-4 rounded-xl flex items-center justify-between group">
+                        <span class="font-bold text-gray-800">村本社長メッセージ</span>
+                        <span class="text-red-500 group-hover:translate-x-1 transition">➔</span>
+                    </a>
+                    <a href="https://creww.me/ja/account/6bcc285c-dd33-4e73-9adf-1c45e5d89d3d" target="_blank" class="link-card p-4 rounded-xl flex items-center justify-between group text-sm">
+                        <span class="font-bold text-gray-800">Creww：村本理恵子社長について</span>
+                        <span class="text-red-500 group-hover:translate-x-1 transition">➔</span>
+                    </a>
+                    <a href="https://woman.nikkei.com/atcl/aria/column/19/012200044/062100030/" target="_blank" class="link-card p-4 rounded-xl flex items-center justify-between group text-sm">
+                        <span class="font-bold text-gray-800">日経ARIA インタビュー</span>
+                        <span class="text-red-500 group-hover:translate-x-1 transition">➔</span>
+                    </a>
                 </div>
             </div>
+        </section>
 
-            <div class="flex flex-col md:flex-row gap-4">
-                <a href="https://www.corporate.alice.style/" target="_blank" class="flex-1 text-center py-3 bg-gray-800 text-white rounded font-bold hover:bg-black transition">企業サイト</a>
+        <section class="mb-24 bg-white shadow-2xl rounded-3xl overflow-hidden border border-gray-100">
+            <div class="p-8 md:p-12">
+                <div class="mb-6">
+                    <span class="badge">幹部候補</span>
+                    <span class="badge">東証グロース上場</span>
+                    <span class="badge">IT × Fashion</span>
+                </div>
+                <h2 class="text-3xl md:text-5xl font-black mb-8 leading-none">株式会社エアークローゼット</h2>
+                
+                <div class="corporate-overview mb-10">
+                    <h3 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Corporate Overview</h3>
+                    <table class="w-full text-base border-collapse">
+                        <tr class="border-b border-blue-100">
+                            <th class="py-3 text-left w-1/3 text-gray-500 font-medium italic">本社住所</th>
+                            <td class="py-3 font-bold">東京都港区南青山3-1-31 KDDI維新ビル 5F</td>
+                        </tr>
+                        <tr class="border-b border-blue-100">
+                            <th class="py-3 text-left text-gray-500 font-medium italic">設立</th>
+                            <td class="py-3 font-bold">2014年7月</td>
+                        </tr>
+                        <tr class="border-b border-blue-100">
+                            <th class="py-3 text-left text-gray-500 font-medium italic">従業員数</th>
+                            <td class="py-3 font-bold">約160名（連結）</td>
+                        </tr>
+                        <tr>
+                            <th class="py-3 text-left text-gray-500 font-medium italic">上場区分</th>
+                            <td class="py-3 font-bold">東証グロース</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="mb-10 p-6 bg-gray-50 rounded-xl border-t-4 border-morich-red">
+                    <div class="mb-4">
+                        <span class="text-xs font-black bg-gray-800 text-white px-2 py-1 rounded mr-2">VISION</span>
+                        <span class="text-lg font-bold">「ワクワクが空気のようにあたりまえになる世界へ」</span>
+                    </div>
+                    <div>
+                        <span class="text-xs font-black bg-gray-800 text-white px-2 py-1 rounded mr-2">MISSION</span>
+                        <span class="text-lg font-bold">「発想とITで人々の日常に新しいワクワクを創造する」</span>
+                    </div>
+                </div>
+
+                <div class="space-y-6 text-gray-700 text-lg mb-10">
+                    <p>
+                        エアークローゼットは、プロのスタイリストが選んだ洋服が専用ボックスで毎月届く "airCloset" のサービス開発・運営を中心に、IT × ファッション領域での事業拡大を目指しています。
+                    </p>
+                    <p>
+                        増え続ける「モノ・情報」に対して人々の時間は限られています。私たちの届けたい価値はITを通じた「モノ・情報との最適な出会い」です。これまでにない『感動する洋服との出会い』を体験を通して、忙しい現代女性のライフスタイルをより豊かにします。
+                    </p>
+                    <p>
+                        今後は、独自開発し特許を取得した「スタイリング提供システム」で蓄積している、スタイリングの好みに関するデータを解析していきます。そこから人の好みを可視化してビジネスに繋げて、衣料の領域だけではない多くの人々のライフスタイルに新しい価値を生み続けます。
+                    </p>
+                </div>
+
+                <a href="https://corp.air-closet.com/" target="_blank" class="block w-full text-center py-6 bg-gray-900 text-white font-black text-xl rounded-2xl hover:bg-black transition shadow-lg">
+                    エアークローゼット コーポレートサイトを表示
+                </a>
             </div>
         </section>
 
-        <section class="mb-20 bg-white shadow-xl rounded-2xl p-6 md:p-10">
-            <div class="mb-4">
-                <span class="badge">幹部候補</span>
-                <span class="badge">東証グロース上場</span>
-                <span class="badge">Fashion Tech</span>
-            </div>
-            <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">株式会社エアークローゼット</h2>
-            
-            <div class="corporate-overview mb-8">
-                <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-3">Corporate Overview</h3>
-                <table class="w-full text-sm">
-                    <tr class="border-b border-gray-200">
-                        <th class="py-2 text-left w-1/3">本社住所</th>
-                        <td class="py-2">東京都港区南青山3-1-31 KDDI維新ビル 5F</td>
-                    </tr>
-                    <tr class="border-b border-gray-200">
-                        <th class="py-2 text-left">設立</th>
-                        <td class="py-2">2014年7月</td>
-                    </tr>
-                    <tr class="border-b border-gray-200">
-                        <th class="py-2 text-left">従業員数</th>
-                        <td class="py-2">約160名（連結）</td>
-                    </tr>
-                    <tr>
-                        <th class="py-2 text-left">上場区分</th>
-                        <td class="py-2">東証グロース市場</td>
-                    </tr>
-                </table>
-            </div>
+        <section class="mb-24 bg-white shadow-2xl rounded-3xl overflow-hidden border border-gray-100">
+            <div class="p-8 md:p-12">
+                <div class="mb-6">
+                    <span class="badge">CEO直下</span>
+                    <span class="badge">事業責任者</span>
+                    <span class="badge">IPO準備中</span>
+                    <span class="badge">Climate Tech</span>
+                </div>
+                <h2 class="text-3xl md:text-5xl font-black mb-8 leading-none">アスエネ株式会社</h2>
+                
+                <div class="corporate-overview mb-10">
+                    <h3 class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Corporate Overview</h3>
+                    <table class="w-full text-base border-collapse">
+                        <tr class="border-b border-blue-100">
+                            <th class="py-3 text-left w-1/3 text-gray-500 font-medium italic">本社住所</th>
+                            <td class="py-3 font-bold">東京都港区虎ノ門1丁目10−5 KDX虎ノ門1丁目ビル 4F</td>
+                        </tr>
+                        <tr class="border-b border-blue-100">
+                            <th class="py-3 text-left text-gray-500 font-medium italic">設立</th>
+                            <td class="py-3 font-bold">2019年9月</td>
+                        </tr>
+                        <tr class="border-b border-blue-100">
+                            <th class="py-3 text-left text-gray-500 font-medium italic">従業員数</th>
+                            <td class="py-3 font-bold">正社員280名（業務委託含め400名超）</td>
+                        </tr>
+                        <tr>
+                            <th class="py-3 text-left text-gray-500 font-medium italic">上場区分</th>
+                            <td class="py-3 font-bold">未上場（大型IPO準備中）</td>
+                        </tr>
+                    </table>
+                </div>
 
-            <div class="prose max-w-none mb-8">
-                <p class="mb-4">
-                    「ワクワクが空気のようにあたりまえになる世界へ」をビジョンに掲げ、プロのスタイリストが選んだ洋服が届くサブスク型ファッションレンタルサービス「airCloset」を展開。
-                </p>
-                <p class="mb-4">
-                    特許を取得した「スタイリング提供システム」を軸に、嗜好データを解析。衣料領域に留まらず、人の好みを可視化する「データ・プラットフォーマー」としての進化を続けています。
-                </p>
-            </div>
+                <div class="space-y-6 text-gray-700 text-lg mb-10">
+                    <p>
+                        「次世代によりよい世界を」をミッションに2019年に創業した、気候変動問題解決に取り組むクライメートテック企業です。
+                    </p>
+                    <p>
+                        CO2排出量見える化・削減・報告クラウドサービス<strong>「ASUENE」</strong>、サプライチェーンマネジメントクラウドサービス<strong>「ASUENE SUPPLY CHAIN」</strong>、GX・ESG人材特化型転職プラットフォーム<strong>「ASUENE CAREER」</strong>、非財務データの第三者保証事業<strong>「ASUENE VERITAS」</strong>、カーボンクレジット取引所<strong>「Carbon EX」</strong>など脱炭素・ESG領域のマルチプロダクトを提供し、企業のサステナビリティ経営をワンストップで支援しています。
+                    </p>
+                    <p>
+                        実績は圧倒的で、「ASUENE」は導入社数3年連続No.1、ESG評価クラウドも2年連続No.1を獲得。三井住友銀行の事業を買収・統合するなどこれまでに6社のM&Aを実施し、成長戦略の中核としています。現在は日本・米国・シンガポール・ロンドンなど世界6ヶ国に拠点を持ち、グローバル展開を加速させています。
+                    </p>
+                </div>
 
-            <div class="bg-gray-50 p-6 rounded-lg mb-8">
-                <h3 class="font-bold mb-4 border-l-4 border-morich-red pl-3">代表取締役社長 兼 CEO：天沼 聰 氏</h3>
-                <p class="text-sm leading-relaxed mb-4">
-                    コンサルティングファームを経て、楽天にてUI/UXに特化したWebデザイン・マーケティング組織を率いたのち創業。IT×リアルを融合させた新しいユーザー体験の創造を経営の軸に置いています。
-                </p>
-            </div>
+                <div class="morich-highlight mb-10">
+                    <h3 class="text-morich-red font-black text-xl mb-4 italic">★＝＝morichオススメPoint＝＝★</h3>
+                    <ul class="space-y-4 text-gray-800">
+                        <li class="flex items-start"><span class="text-red-600 mr-2">●</span><div><strong>圧倒的な成長資金と財務基盤：</strong> 累計資金調達額は115億円に上り、米国展開を加速。メガバンク（SMBC）のプロダクトを事業承継するなど、異例かつ規模の大きなM&Aも成功させています。</div></li>
+                        <li class="flex items-start"><span class="text-red-600 mr-2">●</span><div><strong>グローバルな事業展開：</strong> 現在、日本を含めて6カ国（東京、シンガポール、ロサンゼルス、ロンドン、バンコク、セブ）に現地拠点を持ち、事業を拡大しています。</div></li>
+                        <li class="flex items-start"><span class="text-red-600 mr-2">●</span><div><strong>市場No.1の実績と優位性：</strong> 主力サービスは3年連続導入社数No.1を獲得。業界内での地位を完全に確立しています。</div></li>
+                        <li class="flex items-start"><span class="text-red-600 mr-2">●</span><div><strong>ハイクラス人材が集う組織：</strong> 優秀なメンバーと切磋琢磨できる環境。大型IPOを狙い、市況を見ながら上場タイミングを見計らっているフェーズです。時価総額一兆円に向かって事業急拡大中の同社、一度お話を聞いてみませんか？</div></li>
+                    </ul>
+                </div>
 
-            <div class="flex flex-col md:flex-row gap-4">
-                <a href="https://corp.air-closet.com/" target="_blank" class="flex-1 text-center py-3 bg-gray-800 text-white rounded font-bold hover:bg-black transition">企業サイト</a>
-            </div>
-        </section>
+                <div class="bg-gray-100 p-8 rounded-2xl mb-10">
+                    <h3 class="text-xl font-black mb-4 italic border-b border-gray-300 pb-2">Founder 代表取締役CEO 西和田 浩平 氏</h3>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        慶應義塾大学卒業、三井物産にて日本・欧州・中南米の再生可能エネルギーの新規事業投資・M&Aを担当。Forbes Japan Rising Star Award受賞、Forbes Japan 100選出など多数のアワードを受賞。2025年12月に初の著書「『世界で勝てるGX』脱炭素資本主義が動かす、再エネ×AI主導の21世紀の産業革命」を出版。
+                    </p>
+                </div>
 
-        <section class="mb-20 bg-white shadow-xl rounded-2xl p-6 md:p-10">
-            <div class="mb-4">
-                <span class="badge">CEO直下</span>
-                <span class="badge">グローバル幹部</span>
-                <span class="badge">Confidential</span>
-            </div>
-            <h2 class="text-3xl md:text-4xl font-black mb-6 leading-tight">アスエネ株式会社</h2>
-            
-            <div class="corporate-overview mb-8">
-                <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-3">Corporate Overview</h3>
-                <table class="w-full text-sm">
-                    <tr class="border-b border-gray-200">
-                        <th class="py-2 text-left w-1/3">本社住所</th>
-                        <td class="py-2">東京都港区虎ノ門1丁目10−5 KDX虎ノ門1丁目ビル 4F</td>
-                    </tr>
-                    <tr class="border-b border-gray-200">
-                        <th class="py-2 text-left">設立</th>
-                        <td class="py-2">2019年9月</td>
-                    </tr>
-                    <tr class="border-b border-gray-200">
-                        <th class="py-2 text-left">従業員数</th>
-                        <td class="py-2">正社員280名（全体400名超）</td>
-                    </tr>
-                    <tr>
-                        <th class="py-2 text-left">上場区分</th>
-                        <td class="py-2">未上場（大型IPO準備中）</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="prose max-w-none mb-8">
-                <p class="mb-4">
-                    CO2排出量見える化クラウド「ASUENE」を中心に、脱炭素・ESG領域のマルチプロダクトを展開。累計115億円の資金調達を実施し、米誌「2025 World’s Top GreenTech Companies」に日本企業として唯一選出。
-                </p>
-                <p class="mb-4">
-                    SMBCからの事業継承を含む6件のM&Aを成功させ、現在は世界6ヶ国（日・米・英・星等）へ展開。時価総額一兆円を目指す、日本屈指のクライメートテック企業です。
-                </p>
-            </div>
-
-            <div class="morich-highlight mb-8">
-                <h3 class="font-bold text-morich-red mb-3 italic">★ morich オススメPoint</h3>
-                <ul class="text-sm leading-relaxed list-disc list-inside space-y-2">
-                    <li><strong>圧倒的な財務基盤：</strong> 累計115億円を調達し、メガバンク案件の事業承継も成功。</li>
-                    <li><strong>真のグローバル展開：</strong> 6カ国に拠点を持ち、規制の厳しい欧米市場をリード。</li>
-                    <li><strong>市場No.1の優位性：</strong> 主力サービスは3年連続No.1。圧倒的シェアを誇ります。</li>
-                    <li><strong>ハイクラスな組織：</strong> CEO直下の新規事業や事業部幹部を募集中。最高峰のメンバーと切磋琢磨できる環境。</li>
-                </ul>
-            </div>
-
-            <div class="bg-gray-50 p-6 rounded-lg mb-8">
-                <h3 class="font-bold mb-4 border-l-4 border-morich-red pl-3">Founder 代表取締役CEO：西和田 浩平 氏</h3>
-                <p class="text-sm leading-relaxed mb-4">
-                    三井物産にて再エネ投資・M&Aに従事。Forbes Japan Rising Star、Forbes 100選出など受賞歴多数。2025年12月には初の著書『世界で勝てるGX』を出版。
-                </p>
-                <div class="flex flex-wrap gap-3">
-                    <a href="https://prtimes.jp/main/html/rd/p/000000598.000058538.html" target="_blank" class="text-xs bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded">PR TIMES（最新資金調達）</a>
+                <div class="grid grid-cols-1 gap-4">
+                    <a href="https://corp.asuene.com/company" target="_blank" class="link-card p-6 rounded-xl flex items-center justify-between group">
+                        <div>
+                            <div class="text-xs text-gray-500 font-bold mb-1">OFFICIAL SITE</div>
+                            <div class="font-black text-xl text-gray-800">アスエネ 企業情報</div>
+                        </div>
+                        <span class="text-2xl text-red-500 group-hover:translate-x-2 transition">➔</span>
+                    </a>
+                    <a href="https://prtimes.jp/main/html/rd/p/000000598.000058538.html" target="_blank" class="link-card p-6 rounded-xl flex items-center justify-between group">
+                        <div>
+                            <div class="text-xs text-gray-500 font-bold mb-1">PRESS RELEASE</div>
+                            <div class="font-bold text-gray-800">累計115億円調達・米国企業2社目のM&A実行</div>
+                        </div>
+                        <span class="text-2xl text-red-500 group-hover:translate-x-2 transition">➔</span>
+                    </a>
                 </div>
             </div>
-
-            <div class="flex flex-col md:flex-row gap-4">
-                <a href="https://corp.asuene.com/" target="_blank" class="flex-1 text-center py-3 bg-gray-800 text-white rounded font-bold hover:bg-black transition">企業サイト</a>
-            </div>
         </section>
 
-        <section class="text-center py-10 bg-morich-red text-white rounded-3xl">
-            <h2 class="text-2xl font-bold mb-4">一度、詳しくお話ししませんか？</h2>
-            <p class="mb-8 px-6">これらの企業は、前田様のこれまでの経験を<br class="hidden md:block">最大限に発揮できるフィールドであると確信しております。</p>
-            <p class="text-sm font-bold">ALL FOR THE CANDIDATE. - morich</p>
+        <section class="text-center py-16 bg-morich-red text-white rounded-[3rem] shadow-2xl px-6">
+            <h2 class="text-3xl md:text-4xl font-black mb-6 italic">ALL FOR THE CANDIDATE.</h2>
+            <p class="text-xl mb-10 leading-relaxed max-w-2xl mx-auto">
+                前田様、いかがでしょうか。<br>
+                どの企業も、今のフェーズだからこそ前田様のような力強いリーダーを求めています。<br>
+                まずはカジュアルにお話を聞いてみるだけでも、大きな一歩になると確信しています。
+            </p>
+            <div class="inline-block px-12 py-5 bg-white text-morich-red font-black text-2xl rounded-full shadow-xl hover:scale-105 transition cursor-default">
+                morichが全力で伴走いたします。
+            </div>
         </section>
 
     </main>
 
-    <footer class="bg-gray-100 py-10 text-center text-gray-500 text-xs">
-        <p>&copy; 2026 morich Inc. All Rights Reserved.</p>
-        <p class="mt-2">本ページは候補者様限定のパーソナライズWebサイトです。</p>
+    <footer class="bg-gray-100 py-12 text-center text-gray-500">
+        <div class="container mx-auto px-4">
+            <img src="morich_logo.jpg" alt="morich" class="h-8 mx-auto mb-4 opacity-50 grayscale">
+            <p class="text-xs font-bold tracking-widest">&copy; 2026 morich Inc. All Rights Reserved.</p>
+        </div>
     </footer>
 
 </body>
